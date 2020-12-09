@@ -1263,10 +1263,6 @@ Table of Contents
        attribute-name of "SameSite" and an attribute-value of
        "enforcement".
 
-   Note: This algorithm maps the "None" value, as well as any unknown
-   value, to the "None" behavior, which is helpful for backwards
-   compatibility when introducing new variants.
-
 5.3.7.1.  "Strict" and "Lax" enforcement
 
    Same-site cookies in "Strict" enforcement mode will not be sent along
