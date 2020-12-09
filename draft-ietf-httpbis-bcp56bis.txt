@@ -3,10 +3,10 @@
 
 
 HTTP                                                       M. Nottingham
-Internet-Draft                                           7 December 2020
+Internet-Draft                                           9 December 2020
 Obsoletes: 3205 (if approved)                                           
 Intended status: Best Current Practice                                  
-Expires: 10 June 2021
+Expires: 12 June 2021
 
 
                       Building Protocols with HTTP
@@ -48,7 +48,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 June 2021.
+   This Internet-Draft will expire on 12 June 2021.
 
 Copyright Notice
 
@@ -1411,9 +1411,9 @@ Table of Contents
    [I-D.ietf-httpbis-rfc6265bis]
               West, M. and J. Wilander, "Cookies: HTTP State Management
               Mechanism", Work in Progress, Internet-Draft, draft-ietf-
-              httpbis-rfc6265bis-06, 20 April 2020,
+              httpbis-rfc6265bis-07, 7 December 2020,
               <http://www.ietf.org/internet-drafts/draft-ietf-httpbis-
-              rfc6265bis-06.txt>.
+              rfc6265bis-07.txt>.
 
    [REFERRER-POLICY]
               Eisinger, J. and E. Stark, "Referrer Policy", World Wide

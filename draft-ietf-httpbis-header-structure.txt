@@ -5,8 +5,8 @@
 HTTP                                                       M. Nottingham
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                               P-H. Kamp
-Expires: 10 June 2021                          The Varnish Cache Project
-                                                         7 December 2020
+Expires: 12 June 2021                          The Varnish Cache Project
+                                                         9 December 2020
 
 
                     Structured Field Values for HTTP
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 June 2021.
+   This Internet-Draft will expire on 12 June 2021.
 
 Copyright Notice
 
@@ -387,8 +387,8 @@ Table of Contents
    An empty List is denoted by not serializing the field at all.  This
    implies that fields defined as Lists have a default empty value.
 
-   Note that Lists can have their members split across multiple lines
-   inside a header or trailer section, as per Section 3.2.2 of
+   Note that Lists can have their members split across multiple lines of
+   the same header or trailer section, as per Section 3.2.2 of
    [RFC7230]; for example, the following are equivalent:
 
    Example-List: foo, bar
@@ -440,6 +440,9 @@ Table of Contents
    are unique within the scope of the Parameters they occur within, and
    the values are bare items (i.e., they themselves cannot be
    parameterized; see Section 3.3).
+
+   Implementations MUST provide access to Parameters both by index and
+   by key.  Specifications MAY use either means of accessing them.
 
    The ABNF for Parameters is:
 
@@ -532,8 +535,8 @@ Table of Contents
    disallows them.
 
    Note that Dictionaries can have their members split across multiple
-   lines inside a header or trailer section; for example, the following
-   are equivalent:
+   lines of the same header or trailer section; for example, the
+   following are equivalent:
 
    Example-Dict: foo=1, bar=2
 
