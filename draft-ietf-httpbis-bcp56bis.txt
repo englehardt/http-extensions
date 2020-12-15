@@ -3,10 +3,10 @@
 
 
 HTTP                                                       M. Nottingham
-Internet-Draft                                           9 December 2020
+Internet-Draft                                          15 December 2020
 Obsoletes: 3205 (if approved)                                           
 Intended status: Best Current Practice                                  
-Expires: 12 June 2021
+Expires: 18 June 2021
 
 
                       Building Protocols with HTTP
@@ -48,7 +48,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 12 June 2021.
+   This Internet-Draft will expire on 18 June 2021.
 
 Copyright Notice
 
@@ -1308,22 +1308,21 @@ Table of Contents
    [I-D.ietf-httpbis-cache]
               Fielding, R., Nottingham, M., and J. Reschke, "HTTP
               Caching", Work in Progress, Internet-Draft, draft-ietf-
-              httpbis-cache-12, 2 October 2020, <http://www.ietf.org/
-              internet-drafts/draft-ietf-httpbis-cache-12.txt>.
+              httpbis-cache-13, 14 December 2020, <http://www.ietf.org/
+              internet-drafts/draft-ietf-httpbis-cache-13.txt>.
 
    [I-D.ietf-httpbis-messaging]
-              Fielding, R., Nottingham, M., and J. Reschke, "HTTP/1.1
-              Messaging", Work in Progress, Internet-Draft, draft-ietf-
-              httpbis-messaging-12, 2 October 2020,
-              <http://www.ietf.org/internet-drafts/draft-ietf-httpbis-
-              messaging-12.txt>.
+              Fielding, R., Nottingham, M., and J. Reschke, "HTTP/1.1",
+              Work in Progress, Internet-Draft, draft-ietf-httpbis-
+              messaging-13, 14 December 2020, <http://www.ietf.org/
+              internet-drafts/draft-ietf-httpbis-messaging-13.txt>.
 
    [I-D.ietf-httpbis-semantics]
               Fielding, R., Nottingham, M., and J. Reschke, "HTTP
               Semantics", Work in Progress, Internet-Draft, draft-ietf-
-              httpbis-semantics-12, 2 October 2020,
+              httpbis-semantics-13, 14 December 2020,
               <http://www.ietf.org/internet-drafts/draft-ietf-httpbis-
-              semantics-12.txt>.
+              semantics-13.txt>.
 
    [I-D.nottingham-rfc5785bis]
               Nottingham, M., "Well-Known Uniform Resource Identifiers

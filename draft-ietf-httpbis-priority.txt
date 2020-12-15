@@ -5,8 +5,8 @@
 HTTP                                                              K. Oku
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                               L. Pardue
-Expires: 12 June 2021                                         Cloudflare
-                                                         9 December 2020
+Expires: 18 June 2021                                         Cloudflare
+                                                        15 December 2020
 
 
                Extensible Prioritization Scheme for HTTP
@@ -55,7 +55,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 12 June 2021.
+   This Internet-Draft will expire on 18 June 2021.
 
 Copyright Notice
 
@@ -850,9 +850,9 @@ Table of Contents
    [I-D.ietf-quic-transport]
               Iyengar, J. and M. Thomson, "QUIC: A UDP-Based Multiplexed
               and Secure Transport", Work in Progress, Internet-Draft,
-              draft-ietf-quic-transport-32, 20 October 2020,
+              draft-ietf-quic-transport-33, 13 December 2020,
               <http://www.ietf.org/internet-drafts/draft-ietf-quic-
-              transport-32.txt>.
+              transport-33.txt>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
