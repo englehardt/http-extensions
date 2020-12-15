@@ -1035,8 +1035,8 @@ Table of Contents
    stripped or added.
 
    Any mangling of "Digest", including de-duplication of representation-
-   data-digest values or combining different field values (see 5.3.1 of
-   [SEMANTICS]) might affect signature validation.
+   data-digest values or combining different field values (see
+   Section 5.2 of [SEMANTICS]) might affect signature validation.
 
 12.7.  Usage in trailers
 
