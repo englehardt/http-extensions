@@ -5,8 +5,8 @@
 HTTP                                                              K. Oku
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                               L. Pardue
-Expires: 21 May 2021                                          Cloudflare
-                                                        17 November 2020
+Expires: 21 June 2021                                         Cloudflare
+                                                        18 December 2020
 
 
                Extensible Prioritization Scheme for HTTP
@@ -55,7 +55,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 May 2021.
+   This Internet-Draft will expire on 21 June 2021.
 
 Copyright Notice
 
@@ -439,7 +439,7 @@ Table of Contents
    stream is opened.  Holding PRIORITY_UPDATE frames for each stream
    requires server resources, which can can be bound by local
    implementation policy.  (TODO: consider resolving #1261, and adding
-   more text about bounds).  Although there is no limit to the number
+   more text about bounds).  Although there is no limit to the number of
    PRIORITY_UPDATES that can be sent, storing only the most recently
    received frame limits resource commitment.
 
@@ -478,10 +478,14 @@ Table of Contents
    Priority Field Value:  The priority update value in ASCII text,
       encoded using Structured Fields.
 
-   The Prioritized Stream ID MUST be within the stream limit.  If a
-   server receives a PRIORITY_UPDATE with a Prioritized Stream ID that
-   is beyond the stream limits, this SHOULD be treated as a connection
-   error of type PROTOCOL_ERROR.
+   The Prioritized Stream ID SHOULD be a value within the stream
+   concurrency window.  A server SHOULD NOT treat a Prioritized Stream
+   ID beyond this window as an error because it can buffer
+   PRIORITY_UPDATE frames; see Section 6.  However, servers can limit
+   the amount of buffering beyond the limit imposed by the concurrency
+   window.  Therefore, sending PRIORITY_UPDATE frames for streams too
+   far beyond the limit could result in them being in ignored and the
+   application of default priority when the stream is eventually opened.
 
    If a PRIORITY_UPDATE frame is received with a Prioritized Stream ID
    of 0x0, the recipient MUST respond with a connection error of type
@@ -844,15 +848,15 @@ Table of Contents
    [I-D.ietf-quic-http]
               Bishop, M., "Hypertext Transfer Protocol Version 3
               (HTTP/3)", Work in Progress, Internet-Draft, draft-ietf-
-              quic-http-32, 20 October 2020, <http://www.ietf.org/
-              internet-drafts/draft-ietf-quic-http-32.txt>.
+              quic-http-33, 15 December 2020, <http://www.ietf.org/
+              internet-drafts/draft-ietf-quic-http-33.txt>.
 
    [I-D.ietf-quic-transport]
               Iyengar, J. and M. Thomson, "QUIC: A UDP-Based Multiplexed
               and Secure Transport", Work in Progress, Internet-Draft,
-              draft-ietf-quic-transport-32, 20 October 2020,
+              draft-ietf-quic-transport-33, 13 December 2020,
               <http://www.ietf.org/internet-drafts/draft-ietf-quic-
-              transport-32.txt>.
+              transport-33.txt>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
